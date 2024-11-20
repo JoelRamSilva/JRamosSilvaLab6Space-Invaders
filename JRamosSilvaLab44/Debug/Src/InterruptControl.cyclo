@@ -1,0 +1,5 @@
+../Src/InterruptControl.c:10:6:IRQ_enable	3
+../Src/InterruptControl.c:19:6:IRQ_disable	3
+../Src/InterruptControl.c:28:6:IRQ_set	3
+../Src/InterruptControl.c:37:6:IRQ_clear	3
+../Src/InterruptControl.c:47:6:EXTI_IRQ_clearPending	1

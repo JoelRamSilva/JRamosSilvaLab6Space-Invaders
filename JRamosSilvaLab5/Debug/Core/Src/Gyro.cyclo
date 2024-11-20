@@ -1,0 +1,10 @@
+../Core/Src/Gyro.c:15:13:Gyro_WriteRegister	2
+../Core/Src/Gyro.c:26:6:Gyro_Init	1
+../Core/Src/Gyro.c:66:6:Gyro_DeviceIDPrint	2
+../Core/Src/Gyro.c:82:6:Gyro_PowerOn	1
+../Core/Src/Gyro.c:89:6:Gyro_TemperaturePrint	2
+../Core/Src/Gyro.c:106:6:Gyro_RegisterConfigure	1
+../Core/Src/Gyro.c:111:6:Gyro_ReadRegisters	1
+../Core/Src/Gyro.c:135:6:Gyro_HALStatus	2
+../Core/Src/Gyro.c:144:6:Gyro_EnableSlaveCommunication	1
+../Core/Src/Gyro.c:148:6:Gyro_DisableSlaveCommunication	1

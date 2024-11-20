@@ -1,0 +1,17 @@
+../Core/Src/ApplicationCode.c:10:6:applicationInit	1
+../Core/Src/ApplicationCode.c:26:6:executeButtonPollingRoutine	2
+../Core/Src/ApplicationCode.c:35:6:greenLEDInit	1
+../Core/Src/ApplicationCode.c:39:6:redLEDInit	1
+../Core/Src/ApplicationCode.c:43:6:toggleGreenLED	1
+../Core/Src/ApplicationCode.c:47:6:toggleRedLED	1
+../Core/Src/ApplicationCode.c:51:6:activateGreenLED	1
+../Core/Src/ApplicationCode.c:55:6:activateRedLED	1
+../Core/Src/ApplicationCode.c:59:6:deactivateGreenLED	1
+../Core/Src/ApplicationCode.c:63:6:deactivateRedLED	1
+../Core/Src/ApplicationCode.c:67:6:appDelay	3
+../Core/Src/ApplicationCode.c:78:6:Application_InitGyro	1
+../Core/Src/ApplicationCode.c:85:6:Application_PrintGyroDeviceID	1
+../Core/Src/ApplicationCode.c:90:6:Application_PrintGyroTemperature	1
+../Core/Src/ApplicationCode.c:95:6:Application_ConfigureGyro	1
+../Core/Src/ApplicationCode.c:102:6:EXTI0_IRQHandler	1
+../Core/Src/ApplicationCode.c:116:6:buttonInterruptInit	1

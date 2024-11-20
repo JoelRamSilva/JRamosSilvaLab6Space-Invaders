@@ -1,0 +1,59 @@
+#include "Game_Menu.h"
+#include "LCD_Driver.h"
+
+// Menu Button Dimensions
+#define START_BUTTON_X 90
+#define START_BUTTON_Y 200
+#define START_BUTTON_WIDTH 140
+#define START_BUTTON_HEIGHT 50
+
+// Initialize the Menu
+void menu_init(void) {
+    menu_render();
+}
+
+// Render the Start Menu
+void menu_render(void) {
+    // Clear screen
+    LCD_Clear(0, LCD_COLOR_BLACK);
+
+    // Draw Title
+	LCD_SetTextColor(LCD_COLOR_WHITE);
+	LCD_SetFont(&Font16x24);
+
+	LCD_DisplayChar(0,0,'H');
+	LCD_DisplayChar(0,240,'e');
+	LCD_DisplayChar(239,0,'l');
+	LCD_DisplayChar(239,300,'l');
+	LCD_DisplayChar(140,140,'o');
+
+	LCD_DisplayChar(100,160,'W');
+	LCD_DisplayChar(115,160,'o');
+	LCD_DisplayChar(125,160,'r');
+	LCD_DisplayChar(130,160,'l');
+	LCD_DisplayChar(140,160,'d');
+
+    // Draw Start Button
+    for (int y = START_BUTTON_Y; y < START_BUTTON_Y + START_BUTTON_HEIGHT; y++) {
+        for (int x = START_BUTTON_X; x < START_BUTTON_X + START_BUTTON_WIDTH; x++) {
+            LCD_Draw_Pixel(x, y, LCD_COLOR_GREEN);
+        }
+    }
+
+}
+
+// Handle Touch Events
+void menu_handle_touch(uint16_t x, uint16_t y) {
+    // Check if "Start" button was touched
+    if (x > START_BUTTON_X && x < (START_BUTTON_X + START_BUTTON_WIDTH) &&
+        y > START_BUTTON_Y && y < (START_BUTTON_Y + START_BUTTON_HEIGHT)) {
+
+        // "Start" button pressed
+        LCD_Clear(0, LCD_COLOR_BLACK);
+        HAL_Delay(1000);
+
+        // Call game start function
+        extern void startGame(void);
+        startGame();
+    }
+}

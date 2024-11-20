@@ -1,0 +1,20 @@
+/*
+ * Game_Menu.c
+ *
+ *  Created on: Nov 20, 2024
+ *      Author: joelrsilva
+ */
+
+#ifndef MENU_H
+#define MENU_H
+
+#include "stm32f4xx_hal.h"
+#include "lcd.h"
+#include "touchscreen.h"
+
+// Function Prototypes
+void menu_init(void);               // Initialize the menu
+void menu_render(void);             // Render the start menu
+void menu_handle_touch(void);       // Handle touch events on the menu
+
+#endif // MENU_H

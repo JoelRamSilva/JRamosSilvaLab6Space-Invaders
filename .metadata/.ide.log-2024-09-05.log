@@ -1,0 +1,4 @@
+2024-09-05 12:22:19,409 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 12:22:19.384 ERROR Chromium process exit code: 139
+2024-09-05 12:22:19,427 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-09-05 12:22:19,428 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 12:22:19.428 ERROR Crash dump dir: /Users/joelrsilva/Library/Application Support/JxBrowser/7.38.2/CrashReports
+2024-09-05 12:22:19,428 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

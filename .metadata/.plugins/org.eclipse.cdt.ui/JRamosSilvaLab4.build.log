@@ -1,0 +1,18 @@
+13:38:26 **** Incremental Build of configuration Debug for project JRamosSilvaLab4 ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ApplicationCode.d" -MT"Src/ApplicationCode.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "JRamosSilvaLab4.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/joelrsilva/Documents/School/2024 - FALL/ECEN 2370/JRamosSilvaLab4/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="JRamosSilvaLab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: JRamosSilvaLab4.elf
+ 
+arm-none-eabi-size  JRamosSilvaLab4.elf 
+arm-none-eabi-objdump -h -S JRamosSilvaLab4.elf  > "JRamosSilvaLab4.list"
+   text	   data	    bss	    dec	    hex	filename
+   3072	      0	   1592	   4664	   1238	JRamosSilvaLab4.elf
+Finished building: default.size.stdout
+ 
+Finished building: JRamosSilvaLab4.list
+ 
+
+13:38:26 Build Finished. 0 errors, 0 warnings. (took 373ms)
+

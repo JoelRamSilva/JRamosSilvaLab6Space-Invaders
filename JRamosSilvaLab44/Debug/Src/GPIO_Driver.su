@@ -1,0 +1,7 @@
+../Src/GPIO_Driver.c:11:6:GPIO_clockHandler	16	static
+../Src/GPIO_Driver.c:32:6:GPIO_writePin	16	static
+../Src/GPIO_Driver.c:45:6:GPIO_togglePin	16	static
+../Src/GPIO_Driver.c:51:6:GPIO_initialize	32	static
+../Src/GPIO_Driver.c:127:9:GPIO_readPin	24	static
+../Src/GPIO_Driver.c:132:10:GPIO_portNum	16	static
+../Src/GPIO_Driver.c:143:6:GPIO_NVIC_enable_disable	16	static

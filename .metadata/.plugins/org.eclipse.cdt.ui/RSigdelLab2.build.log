@@ -1,0 +1,27 @@
+20:49:10 **** Incremental Build of configuration Debug for project RSigdelLab2 ****
+make -j11 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f429zitx.d" -MT"Startup/startup_stm32f429zitx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f429zitx.o" "../Startup/startup_stm32f429zitx.s"
+arm-none-eabi-gcc "../Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ApplicationCode.d" -MT"Src/ApplicationCode.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Src/ButtonDriver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ButtonDriver.d" -MT"Src/ButtonDriver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ButtonDriver.o"
+arm-none-eabi-gcc "../Src/GPIO_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/GPIO_Driver.d" -MT"Src/GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/GPIO_Driver.o"
+arm-none-eabi-gcc "../Src/InterruptControl.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/InterruptControl.d" -MT"Src/InterruptControl.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/InterruptControl.o"
+arm-none-eabi-gcc "../Src/LED_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/LED_Driver.d" -MT"Src/LED_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/LED_Driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/scheduler.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/scheduler.d" -MT"Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/scheduler.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "RSigdelLab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/joelrsilva/Downloads/RSigdelLab3/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RSigdelLab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.macos64_1.0.200.202406191456/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: warning: RSigdelLab2.elf has a LOAD segment with RWX permissions
+Finished building target: RSigdelLab2.elf
+ 
+arm-none-eabi-size  RSigdelLab2.elf 
+arm-none-eabi-objdump -h -S RSigdelLab2.elf  > "RSigdelLab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   2724	      8	   1592	   4324	   10e4	RSigdelLab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: RSigdelLab2.list
+ 
+
+20:49:12 Build Finished. 0 errors, 1 warnings. (took 1s.230ms)
+

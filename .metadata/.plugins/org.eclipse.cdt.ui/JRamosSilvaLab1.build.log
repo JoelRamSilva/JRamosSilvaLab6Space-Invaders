@@ -1,0 +1,10 @@
+21:27:16 **** Incremental Build of configuration Debug for project JRamosSilvaLab1 ****
+make -j11 all 
+arm-none-eabi-size  JRamosSilvaLab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+    980	      0	   1568	   2548	    9f4	JRamosSilvaLab1.elf
+Finished building: default.size.stdout
+ 
+
+21:27:16 Build Finished. 0 errors, 0 warnings. (took 179ms)
+

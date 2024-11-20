@@ -1,0 +1,21 @@
+2024-09-05 10:47:19,226 [INFO] WebApp:189 - Connection lost
+2024-09-05 11:26:48,718 [INFO] WebApp:186 - Connection restablished
+2024-09-05 11:28:06,055 [INFO] WebApp:189 - Connection lost
+2024-09-05 11:28:20,923 [INFO] WebApp:186 - Connection restablished
+2024-09-05 11:28:22,124 [INFO] WebApp:189 - Connection lost
+2024-09-05 11:28:22,548 [INFO] WebApp:186 - Connection restablished
+2024-09-05 11:28:30,617 [INFO] WebApp:189 - Connection lost
+2024-09-05 11:54:44,835 [INFO] WebApp:186 - Connection restablished
+2024-09-05 11:56:55,278 [INFO] WebApp:189 - Connection lost
+2024-09-05 11:59:47,246 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:07:42,009 [INFO] WebApp:189 - Connection lost
+2024-09-05 12:07:47,114 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:11:35,818 [INFO] WebApp:189 - Connection lost
+2024-09-05 12:13:31,685 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:17:43,859 [INFO] WebApp:189 - Connection lost
+2024-09-05 12:18:00,152 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:18:12,389 [INFO] WebApp:189 - Connection lost
+2024-09-05 12:18:17,360 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:19:37,086 [INFO] WebApp:189 - Connection lost
+2024-09-05 12:20:17,416 [INFO] WebApp:186 - Connection restablished
+2024-09-05 12:22:19,443 [ERROR] WebApp:397 - JxBrowser engine crashed! Exit code: 139
