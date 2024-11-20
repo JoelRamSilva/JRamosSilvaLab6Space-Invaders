@@ -1,4 +1,0 @@
-../Core/Src/LED_Driver.c:12:6:LED_Init	3
-../Core/Src/LED_Driver.c:43:6:ToggleLED	3
-../Core/Src/LED_Driver.c:55:6:TurnOffLED	3
-../Core/Src/LED_Driver.c:67:6:TurnOnLED	3

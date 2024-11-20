@@ -1,4 +1,0 @@
-../Core/Src/Button_Drive.c:12:6:buttonInit	1
-../Core/Src/Button_Drive.c:25:6:buttonClock	1
-../Core/Src/Button_Drive.c:29:6:buttonStatus	2
-../Core/Src/Button_Drive.c:39:6:button_Init_Interrup_Mode	1

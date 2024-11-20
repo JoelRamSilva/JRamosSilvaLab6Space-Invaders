@@ -1,7 +1,0 @@
-../Src/GPIO_Driver.c:11:6:GPIO_clockHandler	9
-../Src/GPIO_Driver.c:32:6:GPIO_writePin	3
-../Src/GPIO_Driver.c:45:6:GPIO_togglePin	1
-../Src/GPIO_Driver.c:51:6:GPIO_initialize	6
-../Src/GPIO_Driver.c:127:9:GPIO_readPin	1
-../Src/GPIO_Driver.c:132:10:GPIO_portNum	3
-../Src/GPIO_Driver.c:143:6:GPIO_NVIC_enable_disable	2

@@ -1,4 +1,0 @@
-../Src/ButtonDriver.c:10:6:ButtonDriver_initializeButton	24	static
-../Src/ButtonDriver.c:25:6:ButtonDriver_enableButtonClock	8	static
-../Src/ButtonDriver.c:30:6:ButtonDriver_buttonPressed	8	static
-../Src/ButtonDriver.c:41:6:ButtonDriver_InitInterruptMode	24	static

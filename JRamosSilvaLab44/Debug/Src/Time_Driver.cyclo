@@ -1,7 +1,0 @@
-../Src/Time_Driver.c:3:6:initTimer	7
-../Src/Time_Driver.c:56:6:Timer_Clock_Control	5
-../Src/Time_Driver.c:81:6:TimerStart	1
-../Src/Time_Driver.c:85:6:TimerStop	1
-../Src/Time_Driver.c:89:6:TimerReset	1
-../Src/Time_Driver.c:93:10:TimerVal	1
-../Src/Time_Driver.c:97:6:TimerInterrupt	3

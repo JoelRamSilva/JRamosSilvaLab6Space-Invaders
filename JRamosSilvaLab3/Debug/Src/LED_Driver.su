@@ -1,4 +1,0 @@
-../Src/LED_Driver.c:12:6:LED_Init	16	static
-../Src/LED_Driver.c:42:6:ToggleLED	16	static
-../Src/LED_Driver.c:54:6:TurnOffLED	16	static
-../Src/LED_Driver.c:66:6:TurnOnLED	16	static

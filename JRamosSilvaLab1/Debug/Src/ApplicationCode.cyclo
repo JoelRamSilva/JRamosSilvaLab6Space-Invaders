@@ -1,5 +1,0 @@
-../Src/ApplicationCode.c:18:6:appDelay	3
-../Src/ApplicationCode.c:29:6:enablePeripheralsAndClocks	1
-../Src/ApplicationCode.c:37:6:turnOnRedLED	1
-../Src/ApplicationCode.c:42:6:turnOffRedLED	1
-../Src/ApplicationCode.c:47:6:toggleRedLED	2

@@ -1,8 +1,0 @@
-../Src/Timer_Driver.c:9:6:Timer_Init	24	static
-../Src/Timer_Driver.c:73:6:Timer_ClockControl	16	static
-../Src/Timer_Driver.c:89:6:Timer_Start	16	static
-../Src/Timer_Driver.c:94:6:Timer_Stop	16	static
-../Src/Timer_Driver.c:100:6:Timer_Reset	16	static
-../Src/Timer_Driver.c:104:10:Timer_Auto_Reload	16	static
-../Src/Timer_Driver.c:108:10:Timer_Value	16	static
-../Src/Timer_Driver.c:112:6:Timer_Interrupt_Toggle	16	static
