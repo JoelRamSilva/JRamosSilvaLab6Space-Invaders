@@ -20,6 +20,7 @@ void LCDTouchScreenInterruptGPIOInit(void);
 #endif // TOUCH_INTERRUPT_ENABLED
 #endif // COMPILE_TOUCH_FUNCTIONS
 
+
 void ApplicationInit(void)
 {
 	initialise_monitor_handles(); // Allows printf functionality
@@ -54,7 +55,7 @@ void LCD_Touch_Polling_Demo(void)
 		/* If touch pressed */
 		if (returnTouchStateAndLocation(&StaticTouchData) == STMPE811_State_Pressed) {
 			/* Touch valid */
-			printf("\nX: %03d\nY: %03d\n", StaticTouchData.x, StaticTouchData.y);
+			//printf("\nX: %03d\nY: %03d\n", StaticTouchData.x, StaticTouchData.y);
 			LCD_Clear(0, LCD_COLOR_RED);
 		} else {
 			/* Touch not pressed */
@@ -127,13 +128,13 @@ void EXTI15_10_IRQHandler()
 		DetermineTouchPosition(&StaticTouchData);
 		/* Touch valid */
 		printf("\nX: %03d\nY: %03d \n", StaticTouchData.x, StaticTouchData.y);
-		LCD_Clear(0, LCD_COLOR_RED);
+		game_update(StaticTouchData.x, StaticTouchData.y);
 
 	}else{
 
 		/* Touch not pressed */
 		printf("\nNot pressed \n");
-		LCD_Clear(0, LCD_COLOR_GREEN);
+		//LCD_Clear(0, LCD_COLOR_GREEN);
 	}
 
 	STMPE811_Write(STMPE811_FIFO_STA, 0x01);

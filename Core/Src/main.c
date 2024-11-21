@@ -20,7 +20,8 @@
 #include <stdio.h>
 #include "main.h"
 #include "ApplicationCode.h"
-#include "Game_Menu.h"
+
+
 extern void initialise_monitor_handles(void);
 
 /* Private function prototypes -----------------------------------------------*/
@@ -33,6 +34,7 @@ void SystemClockOverride(void);
   * @brief  The application entry point.
   * @retval int
   */
+
 int main(void)
 {
 
@@ -47,8 +49,11 @@ int main(void)
 
   //LCD_Visual_Demo();
 
-  menu_init();
+  //menu_init();
+  LCD_Clear(0, LCD_COLOR_BLACK);
+  game_init();
   HAL_Delay(5000);
+
 
   // DO NOT CALL THIS FUNCTION WHEN INTERRUPT MODE IS SELECTED IN THE COMPILE SWITCH IN stmpe811.h
   // Un-comment the below function after setting COMPILE_TOUCH to 1 in stmpe811.h
@@ -56,7 +61,8 @@ int main(void)
 
   while (1)
   {
-
+	  printf("\nON MAIN\n");
+      HAL_Delay(16);
   }
 
 }

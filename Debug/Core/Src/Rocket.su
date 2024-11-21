@@ -1,0 +1,4 @@
+../Core/Src/Rocket.c:15:6:moveRocketLeft	4	static
+../Core/Src/Rocket.c:21:6:moveRocketRight	4	static
+../Core/Src/Rocket.c:27:6:moveRocketForward	4	static
+../Core/Src/Rocket.c:33:6:moveRocketBackward	4	static

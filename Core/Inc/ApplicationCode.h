@@ -9,10 +9,14 @@
 #include "stm32f4xx_hal.h"
 
 #include <stdio.h>
+#include "Rocket.h"
+#include "Game_Play.h"
+#include "Game_Menu.h"
 
 
 #ifndef INC_APPLICATIONCODE_H_
 #define INC_APPLICATIONCODE_H_
+
 
 void ApplicationInit(void);
 void LCD_Visual_Demo(void);

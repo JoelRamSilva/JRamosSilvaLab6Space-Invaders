@@ -36,7 +36,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/ApplicationCode.h ../Core/Inc/LCD_Driver.h \
  ../Core/Inc/ili9341.h ../Core/Inc/fonts.h ../Core/Inc/stmpe811.h \
- ../Core/Inc/Game_Menu.h
+ ../Core/Inc/Rocket.h ../Core/Inc/Game_Play.h \
+ ../Core/Inc/ApplicationCode.h ../Core/Inc/Game_Menu.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -78,4 +79,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/ili9341.h:
 ../Core/Inc/fonts.h:
 ../Core/Inc/stmpe811.h:
+../Core/Inc/Rocket.h:
+../Core/Inc/Game_Play.h:
+../Core/Inc/ApplicationCode.h:
 ../Core/Inc/Game_Menu.h:
