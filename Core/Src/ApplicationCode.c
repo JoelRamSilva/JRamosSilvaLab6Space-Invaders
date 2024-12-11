@@ -100,9 +100,13 @@ void EXTI15_10_IRQHandler()
 	bool isTouchDetected = false;
 
 	static uint32_t count;
+	uint32_t t = 3;
 	count = 0;
-	while(count == 0){
+	while(count == 0 && t > 0){
+//		printf("Beforen Count value: %lu\n", count);
 		count = STMPE811_Read(STMPE811_FIFO_SIZE);
+		//printf("After Count value: %lu\n", count);
+		t--;
 	}
 
 	// Disable touch interrupt bit on the STMPE811
@@ -118,38 +122,44 @@ void EXTI15_10_IRQHandler()
 	if (ctrlReg & 0x80)
 	{
 		isTouchDetected = true;
+
 	}
 
 	// Determine if it is pressed or unpressed
 	if(isTouchDetected) // Touch has been detected
 	{
-		printf("\nPressed");
+		//printf("\nPressed");
 		// May need to do numerous retries? 
 		DetermineTouchPosition(&StaticTouchData);
 		/* Touch valid */
-		printf("\nX: %03d\nY: %03d \n", StaticTouchData.x, StaticTouchData.y);
-		game_update(StaticTouchData.x, StaticTouchData.y);
-
+		//printf("\nX: %03d\nY: %03d \n", StaticTouchData.x, StaticTouchData.y);
+		if(gameMode == 1){
+			game_update(StaticTouchData.x, StaticTouchData.y);
+		}
+		else if (gameMode == 0){
+			menu_handle_touch(StaticTouchData.x, StaticTouchData.y);
+		}
 	}else{
 
 		/* Touch not pressed */
-		printf("\nNot pressed \n");
+		//printf("\nNot pressed \n");
 		//LCD_Clear(0, LCD_COLOR_GREEN);
 	}
-
+	//printf("\nPast Touched\n");
 	STMPE811_Write(STMPE811_FIFO_STA, 0x01);
 	STMPE811_Write(STMPE811_FIFO_STA, 0x00);
 
 	// Re-enable IRQs
     WriteDataToTouchModule(STMPE811_INT_EN, currentIRQEnables);
 	HAL_EXTI_ClearPending(&LCDTouchIRQ, EXTI_TRIGGER_RISING_FALLING);
-
+	//printf("\nPast Reenabled\n");
 	HAL_NVIC_ClearPendingIRQ(EXTI15_10_IRQn);
 	HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 	//Potential ERRATA? Clearing IRQ bit again due to an IRQ being triggered DURING the handling of this IRQ..
 	WriteDataToTouchModule(STMPE811_INT_STA, clearIRQData);
-
+	//printf("\nBottom Of Interrupt\n");
+	isTouchDetected = false;
 }
 #endif // TOUCH_INTERRUPT_ENABLED
 #endif // COMPILE_TOUCH_FUNCTIONS

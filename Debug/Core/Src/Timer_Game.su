@@ -1,0 +1,2 @@
+../Core/Src/Timer_Game.c:18:6:showTimer	32	static
+../Core/Src/Timer_Game.c:51:6:resetTimer	4	static

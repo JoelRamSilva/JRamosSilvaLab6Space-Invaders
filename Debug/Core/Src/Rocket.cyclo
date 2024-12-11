@@ -1,4 +1,9 @@
-../Core/Src/Rocket.c:15:6:moveRocketLeft	2
-../Core/Src/Rocket.c:21:6:moveRocketRight	2
-../Core/Src/Rocket.c:27:6:moveRocketForward	2
-../Core/Src/Rocket.c:33:6:moveRocketBackward	2
+../Core/Src/Rocket.c:18:6:moveRocketLeft	2
+../Core/Src/Rocket.c:27:6:moveRocketRight	2
+../Core/Src/Rocket.c:36:6:moveRocketForward	3
+../Core/Src/Rocket.c:46:6:moveRocketBackward	2
+../Core/Src/Rocket.c:54:6:init_bullets	2
+../Core/Src/Rocket.c:65:6:fire_bullets	3
+../Core/Src/Rocket.c:78:6:render_bullets	3
+../Core/Src/Rocket.c:88:6:update_bullets	7
+../Core/Src/Rocket.c:118:6:rederLifes	3

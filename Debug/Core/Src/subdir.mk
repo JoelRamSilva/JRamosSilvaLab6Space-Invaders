@@ -6,10 +6,13 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Core/Src/ApplicationCode.c \
+../Core/Src/Enemy.c \
 ../Core/Src/Game_Menu.c \
 ../Core/Src/Game_Play.c \
 ../Core/Src/LCD_Driver.c \
+../Core/Src/RNG.c \
 ../Core/Src/Rocket.c \
+../Core/Src/Timer_Game.c \
 ../Core/Src/fonts.c \
 ../Core/Src/ili9341.c \
 ../Core/Src/main.c \
@@ -21,10 +24,13 @@ C_SRCS += \
 
 OBJS += \
 ./Core/Src/ApplicationCode.o \
+./Core/Src/Enemy.o \
 ./Core/Src/Game_Menu.o \
 ./Core/Src/Game_Play.o \
 ./Core/Src/LCD_Driver.o \
+./Core/Src/RNG.o \
 ./Core/Src/Rocket.o \
+./Core/Src/Timer_Game.o \
 ./Core/Src/fonts.o \
 ./Core/Src/ili9341.o \
 ./Core/Src/main.o \
@@ -36,10 +42,13 @@ OBJS += \
 
 C_DEPS += \
 ./Core/Src/ApplicationCode.d \
+./Core/Src/Enemy.d \
 ./Core/Src/Game_Menu.d \
 ./Core/Src/Game_Play.d \
 ./Core/Src/LCD_Driver.d \
+./Core/Src/RNG.d \
 ./Core/Src/Rocket.d \
+./Core/Src/Timer_Game.d \
 ./Core/Src/fonts.d \
 ./Core/Src/ili9341.d \
 ./Core/Src/main.d \
@@ -57,7 +66,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/ApplicationCode.cyclo ./Core/Src/ApplicationCode.d ./Core/Src/ApplicationCode.o ./Core/Src/ApplicationCode.su ./Core/Src/Game_Menu.cyclo ./Core/Src/Game_Menu.d ./Core/Src/Game_Menu.o ./Core/Src/Game_Menu.su ./Core/Src/Game_Play.cyclo ./Core/Src/Game_Play.d ./Core/Src/Game_Play.o ./Core/Src/Game_Play.su ./Core/Src/LCD_Driver.cyclo ./Core/Src/LCD_Driver.d ./Core/Src/LCD_Driver.o ./Core/Src/LCD_Driver.su ./Core/Src/Rocket.cyclo ./Core/Src/Rocket.d ./Core/Src/Rocket.o ./Core/Src/Rocket.su ./Core/Src/fonts.cyclo ./Core/Src/fonts.d ./Core/Src/fonts.o ./Core/Src/fonts.su ./Core/Src/ili9341.cyclo ./Core/Src/ili9341.d ./Core/Src/ili9341.o ./Core/Src/ili9341.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/stmpe811.cyclo ./Core/Src/stmpe811.d ./Core/Src/stmpe811.o ./Core/Src/stmpe811.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+	-$(RM) ./Core/Src/ApplicationCode.cyclo ./Core/Src/ApplicationCode.d ./Core/Src/ApplicationCode.o ./Core/Src/ApplicationCode.su ./Core/Src/Enemy.cyclo ./Core/Src/Enemy.d ./Core/Src/Enemy.o ./Core/Src/Enemy.su ./Core/Src/Game_Menu.cyclo ./Core/Src/Game_Menu.d ./Core/Src/Game_Menu.o ./Core/Src/Game_Menu.su ./Core/Src/Game_Play.cyclo ./Core/Src/Game_Play.d ./Core/Src/Game_Play.o ./Core/Src/Game_Play.su ./Core/Src/LCD_Driver.cyclo ./Core/Src/LCD_Driver.d ./Core/Src/LCD_Driver.o ./Core/Src/LCD_Driver.su ./Core/Src/RNG.cyclo ./Core/Src/RNG.d ./Core/Src/RNG.o ./Core/Src/RNG.su ./Core/Src/Rocket.cyclo ./Core/Src/Rocket.d ./Core/Src/Rocket.o ./Core/Src/Rocket.su ./Core/Src/Timer_Game.cyclo ./Core/Src/Timer_Game.d ./Core/Src/Timer_Game.o ./Core/Src/Timer_Game.su ./Core/Src/fonts.cyclo ./Core/Src/fonts.d ./Core/Src/fonts.o ./Core/Src/fonts.su ./Core/Src/ili9341.cyclo ./Core/Src/ili9341.d ./Core/Src/ili9341.o ./Core/Src/ili9341.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/stmpe811.cyclo ./Core/Src/stmpe811.d ./Core/Src/stmpe811.o ./Core/Src/stmpe811.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
 
 .PHONY: clean-Core-2f-Src
 

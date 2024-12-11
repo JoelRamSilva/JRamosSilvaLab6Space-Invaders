@@ -1,3 +1,3 @@
 ../Core/Src/Game_Menu.c:17:6:menu_init	1
-../Core/Src/Game_Menu.c:22:6:menu_render	5
-../Core/Src/Game_Menu.c:79:6:menu_handle_touch	5
+../Core/Src/Game_Menu.c:22:6:menu_render	3
+../Core/Src/Game_Menu.c:61:6:menu_handle_touch	3

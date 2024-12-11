@@ -1,0 +1,4 @@
+../Core/Src/Enemy.c:15:6:init_Enemy	2
+../Core/Src/Enemy.c:26:6:spawn_Enemy	7
+../Core/Src/Enemy.c:60:6:render_Enemy	7
+../Core/Src/Enemy.c:106:6:update_Enemy	8

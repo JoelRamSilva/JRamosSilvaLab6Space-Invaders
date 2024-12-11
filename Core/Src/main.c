@@ -24,6 +24,7 @@
 
 extern void initialise_monitor_handles(void);
 
+
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void SystemClockOverride(void);
@@ -47,12 +48,12 @@ int main(void)
 
   ApplicationInit(); // Initializes the LCD functionality
 
-  //LCD_Visual_Demo();
 
   //menu_init();
   LCD_Clear(0, LCD_COLOR_BLACK);
   game_init();
-  HAL_Delay(5000);
+  //game_render();
+  HAL_Delay(2000);
 
 
   // DO NOT CALL THIS FUNCTION WHEN INTERRUPT MODE IS SELECTED IN THE COMPILE SWITCH IN stmpe811.h
@@ -61,12 +62,19 @@ int main(void)
 
   while (1)
   {
-	  printf("\nON MAIN\n");
-      HAL_Delay(16);
-  }
-
+	if(gameMode == 1){
+		game_render();
+		spawn_Enemy();
+			if (rocket.y < 220){
+			rocket.y += 1.0f;
+			}
+	}
+	else if(gameMode == 0){
+		menu_render();
+	}
+     HAL_Delay(16);
 }
-
+}
 /**
   * @brief System Clock Configuration
   * @retval None

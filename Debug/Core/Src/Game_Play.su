@@ -1,3 +1,7 @@
-../Core/Src/Game_Play.c:13:6:game_init	8	static
-../Core/Src/Game_Play.c:38:6:game_update	16	static
-../Core/Src/Game_Play.c:57:6:game_render	8	static
+../Core/Src/Game_Play.c:16:6:game_init	8	static
+../Core/Src/Game_Play.c:40:6:game_update	16	static
+../Core/Src/Game_Play.c:61:6:game_render	8	static
+../Core/Src/Game_Play.c:127:6:check_collision_rocket	24	static
+../Core/Src/Game_Play.c:135:6:check_collision	24	static
+../Core/Src/Game_Play.c:141:6:scoreKeeping	40	static
+../Core/Src/Game_Play.c:175:6:game_over	24	static

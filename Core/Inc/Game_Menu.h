@@ -10,6 +10,7 @@
 
 #include "stm32f4xx_hal.h"
 #include "LCD_Driver.h"
+#include "ApplicationCode.h"
 
 void menu_init(void);               // Initialize the menu
 void menu_render(void);             // Render the start menu
